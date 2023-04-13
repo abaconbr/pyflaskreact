@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="card-body">
+    <h2 class="card-title">タイトル：{{post.title}}</h2>
+    <p class="card-title">詳細：{{post.detail}}</p>
+    <p>期間：{{post.due.date()}}</p>
+    <a class="btn btn-secondary btn-sm" href="detail/{{post.id}}" role="button">Detail</a>
+    <a class="btn btn-success btn-sm" href="delete/{{post.id}}" role="button">Delete</a>
+    <a class="btn btn-danger btn-sm" href="update/{{post.id}}" role="button">Update</a>
+    <a class="btn btn-secondary btn-sm" href="/" role="button">Return</a>
+</div>
+{% endblock %}
