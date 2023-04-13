@@ -35,3 +35,5 @@ git commit -m "first commit"
 
 heroku create pyflask
 git remote -v
+
+npm run eject
