@@ -37,3 +37,7 @@ heroku create pyflask
 git remote -v
 
 npm run eject
+webpack.config.js　修正必要です
+path: path.resolve(__dirname, '../../../server', 'static'),
+
+
